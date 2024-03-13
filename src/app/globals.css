@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* NAV BAR */
+.buttonSignIn,.navBar p {
+   padding: 2px 8px;
+}
+.buttonSignIn:hover, .navBar p:hover {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+
+/* welcome Banner */
+.welcomeBanner {
+  height: auto;
+  width: 100%;
+  background-color: #262B40;
+}
+
+/* Overview section */
+.overview {
+  box-shadow:7px 5px 3px 3px rgb(55, 55, 55) ;
+}
+
+
+/* //PODCASTS PAGE  */
+.podCasting {
+  border-radius: 4px;
+  box-shadow: 8px 8px 2px 2px rgb(97, 158, 219);
+}
+/* .articleCard .cardTitle:nth-of-type(odd){
+  color: rgb(216, 50, 50);
+} */
+.articleCard article:nth-of-type(odd) {
+  border-radius: 6px;
+  box-shadow: 5px 6px 2px 2px rgb(93, 148, 202);
+}
+
+
+/*AUTH */
+/* Signup */
+
+input[id]:not(#passR,#phone,#privacyCheck,#fNameC,#lNameC,#emailC) {
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 270px;
+  font-size:13.5px;
+  outline: none;
+  /* margin-bottom: 15px; */
+  color: rgb(79, 79, 79);
+  background-color: rgba(241, 245, 249, 0.719);
+}
+label {
+  font-size: 12.5px;
+  margin: 16px 0 0 2px;
+  color: rgb(137, 136, 136);
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
