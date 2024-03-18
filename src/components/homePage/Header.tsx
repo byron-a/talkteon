@@ -24,17 +24,17 @@ export default function Header() {
             </Link>
           </div>
           <div className="flex space-x-5 justify-center w-2/4 tracking-wider text-sm navBar">
-            <Link href="/" className={(pathname === '/')? 'shadow font-medium':''}>
-              <p>Home</p>
+            <Link href="/" >
+              <p className={(pathname === '/')? ' border-b border-sky-800 font-medium':''}>Home</p>
             </Link>
-            <Link href="/podcast" className={pathname === '/podcast'? 'shadow font-medium':''}>
-              <p>Podcast</p>
+            <Link href="/podcast" >
+              <p className={pathname === '/podcast'? 'border-b border-sky-800 font-medium':''}>Podcast</p>
             </Link>
-            <Link href="/about" className={pathname === '/about'? 'shadow font-medium':''}>
-              <p>About</p>
+            <Link href="/about" >
+              <p className={pathname === '/about'? 'border-b border-sky-800 font-medium':''}>About</p>
             </Link>
-            <Link href="/contact_us" className={pathname === '/contact_us'? 'shadow ml-3':'ml-3'}>
-              <p className="font-medium">Contact Us</p>
+            <Link href="/contact_us" >
+              <p className={pathname === '/contact_us'? '  border-b border-sky-800 font-medium':'  font-medium'}>Contact Us</p>
             </Link>
           </div>
           <div className="flex space-x-2 place-items-center">

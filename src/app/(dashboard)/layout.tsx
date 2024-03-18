@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function DashboardLayout({children}:{children:React.ReactNode}){
     return(
-        <main className="bg-[white] w-full h-full">
+        <main className="bg-[white] w-full h-screen relative">
             <AsideNav />
-           {children}
+            {children}
         </main>
     )
 }

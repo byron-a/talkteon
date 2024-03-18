@@ -89,7 +89,7 @@ export default function Episodes(){
                 </nav>
             </div>
             <hr className=" border"/>
-            <div className="grid grid-cols-3 gap-3 pt-6 pb-14 articleCard">
+            <div className="grid grid-cols-3 gap-4 pt-6 pb-14 articleCard">
             {epiState.length > 0? epiState.slice(pageIndex.firstI,pageIndex.lastI).map((episode,key)=> {
             return (
 
@@ -106,17 +106,17 @@ export default function Episodes(){
                         </div>
                         <div className="w-5/6 flex flex-col space-y-2 ">
                             <p className="text-sm text-red-700 font-semibold">Eps. {episode.epiID}</p>
-                            <h3 className="text-base font-bold cardTitle">{episode.title}</h3>
+                            <h3 className="text-[100%] font-bold cardTitle">{episode.title}</h3>
                             <hr />
-                            <p className="text-sm text-slate-500">{episode.description}</p>
+                            <p className="text-[85%] text-slate-500">{episode.description}</p>
                         </div>
                     </div>
                     <div className="flex justify-between items-center ">
                         <div className="flex items-center space-x-1">
-                            {episode.niche.map((nic,key)=> (<p key={key} className="text-[12px] text-slate-600 border py-1 px-2 rounded">{nic}</p>))}
+                            {episode.niche.map((nic,key)=> (<p key={key} className="text-[80%] text-slate-600 border py-1 px-2 rounded">{nic}</p>))}
                         </div>
                         <div className="flex items-center justify-between space-x-1">
-                            <p className="text-[12px] text-slate-700 font-semibold">Hosted by:</p>
+                            <p className="text-[78%] text-slate-700 font-semibold">Hosted by:</p>
                             <div>
                                 <div className="flex -space-x-1">
                                     {episode.hostImgs.map((img,key)=>{
